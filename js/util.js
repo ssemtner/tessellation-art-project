@@ -1,12 +1,16 @@
+function getType(url) {
+    return (url.split("/")[url.split("/").length - 1]).split(".")[0]
+}
+
 function getData (url) {
-    switch (url.split("/")[url.split("/").length - 1]) {
-        case "rotation.html":
+    switch (getType(url)) {
+        case "rotation":
             return rotationData
 
-        case "reflection.html":
+        case "reflection":
             return reflectionData
 
-        case "translation.html":
+        case "translation":
             return translationData
 
         default:
@@ -15,17 +19,15 @@ function getData (url) {
 }
 
 function getCardsContainer(url) {
-    switch (url.split("/")[url.split("/").length - 1]) {
-        case "rotation.html":
-            return $("#rotation-cards")
+    return $("#" + getType(url) + "-cards")
+}
 
-        case "reflection.html":
-            return $("#reflection-cards")
+function getImagePath(url, author) {
+    const name = author.split(" ")[0] + author.split(" ")[1][0]
 
-        case "translation.html":
-            return $("#translation-cards")
+    return "assets/" + getType(url) + "/" + name + ".png"
+}
 
-        default:
-            throw Error
-    }
+function capitalizeFirstLetter(string) {
+    return string[0].toUpperCase() + string.slice(1);
 }

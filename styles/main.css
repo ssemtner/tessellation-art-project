@@ -1,0 +1,29 @@
+.card {
+    max-width: 300px !important;
+}
+
+.card img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 801px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav li {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .display-4 {
+        font-size: 2.7rem;
+    }
+
+    .main-page-title {
+        font-size: 2.3rem;
+    }
+}

@@ -13,8 +13,9 @@ function createCard(data, id, url) {
 }
 
 function loadCards(obj, data, url) {
-    for (let i = 0; i < data.length; i++) {
-        obj.append(createCard(data[i], i, url))
+    const shuffledData = shuffleArray(data)
+    for (let i = 0; i < shuffledData.length; i++) {
+        obj.append(createCard(shuffledData[i], i, url))
     }
 }
 

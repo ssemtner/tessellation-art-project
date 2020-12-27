@@ -1,6 +1,6 @@
 reflectionData = [
     {
-        "title": "Pinata",
+        "title": "Piñata",
         "author": "Lydia Bautista"
     },
     {

@@ -25,27 +25,27 @@ function getType(url) {
 function getData(url) {
     switch (getType(url)) {
         case "rotation":
-            return rotationData
+            return rotationData;
 
         case "reflection":
-            return reflectionData
+            return reflectionData;
 
         case "translation":
-            return translationData
+            return translationData;
 
         default:
-            throw Error
+            throw Error;
     }
 }
 
 function getCardsContainer(url) {
-    return $("#" + getType(url) + "-cards")
+    return $("#" + getType(url) + "-cards");
 }
 
 function getImagePath(url, author) {
-    const name = author.split(" ")[0] + author.split(" ")[1][0]
+    const name = author.split(" ")[0] + author.split(" ")[1][0];
 
-    return "assets/" + getType(url) + "/" + name + ".png"
+    return "assets/" + getType(url) + "/" + name + ".png";
 }
 
 function capitalizeFirstLetter(string) {

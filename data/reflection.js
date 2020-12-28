@@ -35,4 +35,4 @@ reflectionData = [
         "title": "Colors and Shapes",
         "author": "Severin Stone"
     },
-]
+];

@@ -31,4 +31,4 @@ rotationData = [
         "title": "Crazy Hair Monday",
         "author": "Yamilette Navarro"
     },
-]
+];

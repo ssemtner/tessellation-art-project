@@ -127,4 +127,4 @@ translationData = [
         "title": "My Crazy Pattern",
         "author": "Victoria Sanchez"
     },
-]
+];

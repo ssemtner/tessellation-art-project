@@ -9,16 +9,16 @@ function createCard(data, id, url) {
                 $("<button type='button' class='mt-4 btn btn-primary open-popup' data-toggle='modal' data-target='#popup'>View Larger</button>")
             )
         )
-    )
+    );
 }
 
 function loadCards(obj, data, url) {
-    const shuffledData = shuffleArray(data)
+    const shuffledData = shuffleArray(data);
     for (let i = 0; i < shuffledData.length; i++) {
-        obj.append(createCard(shuffledData[i], i, url))
+        obj.append(createCard(shuffledData[i], i, url));
     }
 }
 
 $(document).ready(function () {
-    loadCards(getCardsContainer(this.URL), getData(this.URL), this.URL)
-})
+    loadCards(getCardsContainer(this.URL), getData(this.URL), this.URL);
+});

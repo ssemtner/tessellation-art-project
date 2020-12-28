@@ -9,7 +9,7 @@ translationData = [
     },
     {
         "title": "Cursed Scales",
-        "author": "Christopher Snyder"
+        "author": "Christop her Snyder"
     },
     {
         "title": "Foreign Tessellation",

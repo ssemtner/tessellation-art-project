@@ -27,10 +27,9 @@
             crossorigin="anonymous"
         ></script>
 
-        <script src="data/translation.js"></script>
+        <script src="data/geometry.js"></script>
         <script src="js/util.js"></script>
-        <script src="js/cards.js"></script>
-        <script src="js/popup.js"></script>
+        <script src="js/geometry.js"></script>
     </head>
     <body>
         <nav class="row w-100">
@@ -50,54 +49,20 @@
                         >
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link active" href="translation.html"
+                        <a class="nav-link" href="translation.html"
                             >Translation Tessellations</a
                         >
                     </li>
                     <li class="nav-item px-1">
-                        <a class="nav-link" href="geometry.html">Geometry</a>
+                        <a class="nav-link active" href="geometry.html"
+                            >Geometry</a
+                        >
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <main class="mx-4 row" id="translation-cards"></main>
-
-        <section>
-            <div
-                class="modal fade"
-                id="popup"
-                tabindex="-1"
-                aria-labelledby="popup-label"
-                aria-hidden="true"
-            >
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title" id="popup-label"></h3>
-                            <button
-                                type="button"
-                                class="close"
-                                data-dismiss="modal"
-                                aria-label="Close"
-                            >
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img
-                                class="img-fluid w-100"
-                                alt="Image"
-                                id="popup-image"
-                                src=""
-                            />
-                            <h5 class="m-4" id="popup-author"></h5>
-                            <h6 class="m-4" id="popup-type"></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <main class="mx-4 row" id="geometry-cards"></main>
 
         <footer class="mt-auto py-3">
             <div class="container">

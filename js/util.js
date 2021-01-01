@@ -33,6 +33,9 @@ function getData(url) {
         case "translation":
             return translationData;
 
+        case "geometry":
+            return geometryData;
+
         default:
             throw Error;
     }

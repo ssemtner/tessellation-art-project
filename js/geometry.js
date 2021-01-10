@@ -10,7 +10,6 @@ function createGeometryCard(data, url) {
             $(
                 "<div class='card-body text-center' style='max-width: 300px'></div>"
             ).append(
-                $(`<h3 class='card-title'>"${data.title}"</h3>`),
                 $(
                     `<h5 class='card-subtitle p-2 font-weight-light'>${data.author}</h5>`
                 ),
